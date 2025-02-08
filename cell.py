@@ -37,6 +37,7 @@ class Cell:
             line_color = "gray"
         else:
             line_color = "red"
+        # half_length = abs(self._x2 - self._x1) // 2
         center_self_x = (max(self._x1,self._x2) - min(self._x1,self._x2))/2 + min(self._x1,self._x2)
         center_self_y = (max(self._y1,self._y2) - min(self._y1,self._y2))/2 + min(self._y1,self._y2)
         center_to_x = (max(to_cell._x1,to_cell._x2) - min(to_cell._x1,to_cell._x2))/2 + min(to_cell._x1,to_cell._x2)
